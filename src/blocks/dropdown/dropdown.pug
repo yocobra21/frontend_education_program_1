@@ -1,0 +1,18 @@
+mixin dropdown()
+    .dropdown
+        .dropdown__select
+            span Сколько гостей
+            i.fas.fa-chevron-down
+        .dropdown__menu
+            .dropdown__menu-item
+                h3.dropdown__menu-item-title взрослые
+                .dropdown__count
+                    button.dropdown__count-btn(disabled) -
+                    h3.dropdown__count-title 0
+                    button.dropdown__count-btn  +
+            .dropdown__menu-item
+                h3.dropdown__menu-item-title дети
+                .dropdown__count
+                    button.dropdown__count-btn -
+                    h3.dropdown__count-title 1
+                    button.dropdown__count-btn  +

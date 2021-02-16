@@ -1,0 +1,54 @@
+.dropdown
+    min-width: 320px
+    max-width: 20%
+
+.dropdown__select
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 1px solid $border-color
+    border-radius: $border-radius
+    padding: 15px
+    font-size: 1.4rem
+    cursor: pointer
+    &--active
+        border: 1px solid $border-focus
+        border-radius: $border-radius $border-radius 0 0
+
+.dropdown__menu
+    display: none
+    border: 1px solid $border-focus
+    border-top: none
+    border-radius: 0 0 $border-radius $border-radius
+    &--active
+        display: block
+
+.dropdown__menu-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 13px 7px 13px 15px
+
+.dropdown__menu-item-title
+    text-transform: uppercase
+
+.dropdown__count
+    display: flex
+    align-items: center
+
+.dropdown__count-btn
+    width: 30px
+    height: 30px
+    font-family: $font-family
+    color: $darkshade50
+    outline: none
+    background-color: transparent
+    border: 1px solid $border-color
+    border-radius: 50%
+    &:focus
+        border: 1px solid $border-focus
+    &:disabled
+        opacity: 0.38
+
+.dropdown__count-title
+    padding: 0 10px
