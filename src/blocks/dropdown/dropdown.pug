@@ -2,14 +2,14 @@ mixin dropdown()
     .dropdown
         .dropdown__select
             span Сколько гостей
-            i.fas.fa-chevron-down
+            i.fas.fa-chevron-down.dropdown__select-icon
         .dropdown__menu
             .dropdown__menu-item
                 h3.dropdown__menu-item-title взрослые
                 .dropdown__count
-                    button.dropdown__count-btn(disabled) -
+                    button.dropdown__count-btn(onclick="btnInc") -
                     h3.dropdown__count-title 0
-                    button.dropdown__count-btn  +
+                    button.dropdown__count-btn +
             .dropdown__menu-item
                 h3.dropdown__menu-item-title дети
                 .dropdown__count

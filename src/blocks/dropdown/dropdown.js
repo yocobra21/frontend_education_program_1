@@ -1,8 +1,7 @@
 import * as $ from 'jquery';
 
-$('.dropdown').click(() => {
-    // $('.dropdown__select').toggle('.dropdown__select--active');
-    $('.dropdown__menu').toggle('.dropdown__menu--active');
+$('.dropdown__select').click(() => {
+    $('.dropdown__select').toggleClass('dropdown__select--active');
+    $('.dropdown__select-icon').toggleClass('fa-rotate-180');
+    $('.dropdown__menu').slideToggle();
 })
-
-console.log('hello');
