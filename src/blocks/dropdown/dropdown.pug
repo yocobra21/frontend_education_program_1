@@ -7,12 +7,12 @@ mixin dropdown()
             .dropdown__menu-item
                 h3.dropdown__menu-item-title взрослые
                 .dropdown__count
-                    button.dropdown__count-btn(onclick="btnInc") -
+                    button.dropdown__count-btn(data-btn="dec") -
                     h3.dropdown__count-title 0
-                    button.dropdown__count-btn +
+                    button.dropdown__count-btn(data-btn="inc") +
             .dropdown__menu-item
                 h3.dropdown__menu-item-title дети
                 .dropdown__count
-                    button.dropdown__count-btn -
-                    h3.dropdown__count-title 1
-                    button.dropdown__count-btn  +
+                    button.dropdown__count-btn(data-btn="dec") -
+                    h3.dropdown__count-title 0
+                    button.dropdown__count-btn(data-btn="inc")  +
