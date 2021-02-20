@@ -1,7 +1,6 @@
-mixin ratebtn
+mixin ratebtn(max, star)
     .ratebtn
-        span.ratebtn__star
-        span.ratebtn__star
-        span.ratebtn__star
-        span.ratebtn__star
-        span.ratebtn__star.ratebtn__star--empty
+        each _ in Array(star)
+            span.ratebtn__star
+        each _ in Array(max - star)
+            span.ratebtn__star.ratebtn__star--empty

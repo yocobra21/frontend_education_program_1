@@ -1,6 +1,6 @@
 mixin checkbox(text)
     .check
         label.check__label
-            input.check__input(type="checkbox")
+            input.check__input(type="checkbox")&attributes(attributes)
             span.check__box
             | #{text}

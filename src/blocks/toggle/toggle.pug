@@ -1,7 +1,7 @@
 mixin toggle(text)
     .toggle
         label.toggle__label
-            input.toggle__input(type="checkbox")
+            input.toggle__input(type="checkbox")&attributes(attributes)
             span.toggle__box
                 span.toggle__box-in
             |#{text}   
