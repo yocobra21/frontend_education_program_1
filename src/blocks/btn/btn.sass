@@ -1,0 +1,39 @@
+.btn
+    display: inline-block
+    cursor: pointer
+    transition: opacity .5s ease
+
+    &:hover
+        opacity: 0.5
+
+    
+.b-btn
+    position: relative
+    min-width: 100px
+    padding: 1.5rem 2.0rem
+    border-radius: $btn-border-radius
+    color: $white
+    font-weight: 700
+    font-size: 1.2rem
+    text-transform: uppercase
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+    &--transparent
+        z-index: -2
+        color: $primary-color
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: calc(100% - 2px)
+            height: calc(100% - 2px)
+            border-radius: inherit
+            background-color: $white
+            z-index: -1
+    &:focus
+        outline: none      
+
+
+
+    
