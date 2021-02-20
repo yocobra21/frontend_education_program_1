@@ -1,9 +1,27 @@
+
+.slider__desc
+    display: flex
+    align-items: center
+    justify-content: space-between
+.slider__amount
+    color: $darkshade50
+.irs
+    margin-top: -10px
+
 .irs--flat .irs-bar
-    // height: 6px
-    background-color: $secondary-color
+    height: 6px
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
 
-// .irs--flat .irs-line
-//     height: 6px
+.irs--flat .irs-line
+    height: 6px
 
-
-    
+.irs--flat .irs-handle > i:first-child
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    border: 2px solid $white
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)
+// .irs--flat .irs-handle:hover > i:first-child
+//     background-color: darken($secondary-color, 15%)
+// .irs--flat .irs-handle.state_hover > i:first-child, .irs--flat .irs-handle:hover > i:first-child
+//     background-color: darken($secondary-color, 15%)
