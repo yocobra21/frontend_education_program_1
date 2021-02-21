@@ -1,6 +1,14 @@
 import air from "air-datepicker";
 import inputmaskjquery from "inputmask/dist/jquery.inputmask";
 
+function showDatepicker() {
+  $('.date-dropdown__datepicker-container').toggle()
+}
+
+$('.date-dropdown__item').click(showDatepicker);
+$('.date-dropdown__icon').click(showDatepicker);
+$('.date-dropdown__btn-apply').click(showDatepicker);
+
 $(".date-dropdown__item").inputmask({
   alias: "datetime",
   inputFormat: "dd.mm.yyyy",
@@ -27,6 +35,8 @@ $(".date-dropdown__datepicker").datepicker({
     }
   }
 });
+
+$('.date-dropdown__datepicker-container').toggle()
 
 
 

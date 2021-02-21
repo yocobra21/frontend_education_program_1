@@ -1,9 +1,14 @@
 mixin date-dropdown()
     .date-dropdown
-        input.date-dropdown__item.date-dropdown__arrival(type="text" placeholder="ДД.ММ.ГГГГ")
-        input.date-dropdown__item.date-dropdown__departure(type="text" placeholder="ДД.ММ.ГГГГ")
+        .date-dropdown__input
+            input.date-dropdown__item.date-dropdown__arrival(type="text" placeholder="ДД.ММ.ГГГГ")
+            span.date-dropdown__icon
+        .date-dropdown__input
+            input.date-dropdown__item.date-dropdown__departure(type="text" placeholder="ДД.ММ.ГГГГ")
+            span.date-dropdown__icon
         .date-dropdown__datepicker-container   
             .date-dropdown__datepicker
             .date-dropdown__btns
                 +btn-link("Очистить")
-                +btn-link("Применить")
+                .date-dropdown__btn-apply
+                    +btn-link("Применить")
