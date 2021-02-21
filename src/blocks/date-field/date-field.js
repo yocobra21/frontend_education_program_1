@@ -1,7 +1,9 @@
-import Inputmask from 'inputmask';
-import * as $ from 'jquery';
+import * as $ from "jquery";
+import inputmaskjquery from "inputmask/dist/jquery.inputmask";
 
-$('.date-field__item').inputmask("aa-9{4}");
-
-// // $('.date-field__item').inputmask("99-9999999");
-// Inputmask().mask('.date-field__item');
+$(".date-field__item").inputmask({
+  alias: "datetime",
+  inputFormat: "dd.mm.yyyy",
+  placeholder: "ДД.ММ.ГГГГ",
+  clearMaskOnLostFocus: true,
+});

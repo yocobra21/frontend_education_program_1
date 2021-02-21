@@ -1,4 +1,5 @@
 import * as $ from 'jquery';
+import ion from 'ion-rangeslider';
 
 $('.slider__item').ionRangeSlider({
     type: "double",
