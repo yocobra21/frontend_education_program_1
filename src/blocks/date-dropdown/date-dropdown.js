@@ -20,9 +20,9 @@ $(".date-dropdown__datepicker").datepicker({
     $(".date-dropdown__arrival").val(`${da}.${mo}.${ye}`);
     if (date[1]) {
         let d_next = new Date(date[1]);
-        const ye_n = new Intl.DateTimeFormat("en", { year: "numeric" }).format(d1);
-        const mo_n = new Intl.DateTimeFormat("en", { month: "2-digit" }).format(d1);
-        const da_n = new Intl.DateTimeFormat("en", { day: "2-digit" }).format(d1);
+        const ye_n = new Intl.DateTimeFormat("en", { year: "numeric" }).format(d_next);
+        const mo_n = new Intl.DateTimeFormat("en", { month: "2-digit" }).format(d_next);
+        const da_n = new Intl.DateTimeFormat("en", { day: "2-digit" }).format(d_next);
         $(".date-dropdown__departure").val(`${da_n}.${mo_n}.${ye_n}`);
     }
   },
