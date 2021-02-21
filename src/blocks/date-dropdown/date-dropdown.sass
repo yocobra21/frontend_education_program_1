@@ -14,14 +14,27 @@
     &:focus
         border-color: $border-focus
 
-.date-dropdown__datepicker
+.date-dropdown__datepicker-container 
+    display: inline-block
+    border: 1px solid $border-color
+    border-radius: $border-radius
+    box-shadow: 0px 10px 20px 0px rgba(#1F2041, .05)
+
+
+.date-dropdown__btns
+    display: flex
+    justify-content: space-between
+    margin: 20px 10px
 
 
 .datepicker
     font-family: $font-family
     color: $darkshade50
     font-size: 1.2rem
+    border: none
 .datepicker--nav
+    margin-top: 10px
+    margin-bottom: 10px
     border-bottom: none
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade-
     color: $darkshade25
@@ -39,8 +52,8 @@
     background: $secondary-gradient
 
 .datepicker--cell.-focus-
-    background: lighten($darkshade25, 50)
-    opacity: 0.5
+    // background: lighten($darkshade25, 50)
+    opacity: 0.75
 
 .datepicker--cell.-current-.-focus-
     color: $white
@@ -128,9 +141,22 @@
     background: transparent
     font-weight: 400
 
+.datepicker--nav-title
+    color: $headline-color
+    font-weight: 700
+    font-size: 1.2rem
+    &:hover
+        background: none
+        opacity: 0.75 
+
+.datepicker--nav-title > i
+    color: $headline-color
 
 .datepicker--nav-action > svg
     display: none
+.datepicker--nav-action:hover
+    background: none
+    opacity: 0.75
 .datepicker--nav-action:first-child
     background-image: url("data:image/svg+xml,%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z' fill='%23BC9CFF'/%3E%3C/svg%3E%0A")
     background-repeat: no-repeat
@@ -139,3 +165,19 @@
     background-image: url("data:image/svg+xml,%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z' fill='%23BC9CFF'/%3E%3C/svg%3E%0A")
     background-repeat: no-repeat
     background-position: center
+
+
+.datepicker--cell.datepicker--cell-month.-current-
+    border-radius: 4px
+
+.datepicker--cell.datepicker--cell-month.-focus-
+    border-radius: 4px
+
+
+.datepicker--cell.datepicker--cell-month.-range-from-.-range-to-.-selected-
+    border-radius: 4px
+    &::after
+        display: none
+
+.datepicker--cell.datepicker--cell-year::after
+    display: none
