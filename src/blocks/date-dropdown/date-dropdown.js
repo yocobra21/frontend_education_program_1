@@ -25,5 +25,9 @@ $(".date-dropdown__datepicker").datepicker({
         const da_n = new Intl.DateTimeFormat("en", { day: "2-digit" }).format(d_next);
         $(".date-dropdown__departure").val(`${da_n}.${mo_n}.${ye_n}`);
     }
-  },
+  }
 });
+
+
+
+

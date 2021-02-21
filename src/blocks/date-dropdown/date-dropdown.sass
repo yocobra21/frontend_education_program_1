@@ -38,6 +38,10 @@
     font-weight: 700
     background: $secondary-gradient
 
+.datepicker--cell.-focus-
+    background: lighten($darkshade25, 50)
+    opacity: 0.5
+
 .datepicker--cell.-current-.-focus-
     color: $white
 
@@ -97,7 +101,7 @@
     border-radius: 50%
 
 .datepicker--cell.-in-range-
-    // color: $darkshade25
+    color: $darkshade50
     background-color: transparent
     &::after
         content: ''
@@ -106,7 +110,12 @@
         position: absolute
         background: $primary-gradient
         opacity: 0.25
-        // z-index: -1000
+
+.datepicker--cell.-in-range-.-focus-
+    background: none
+
+.datepicker--cell.-current-.-in-range-
+    color: $darkshade50
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-range-to-.-selected-::after
     content: ''
@@ -118,3 +127,15 @@
 .datepicker--cell.datepicker--cell-day.-weekend-.-in-range-.-current-
     background: transparent
     font-weight: 400
+
+
+.datepicker--nav-action > svg
+    display: none
+.datepicker--nav-action:first-child
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z' fill='%23BC9CFF'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: center
+.datepicker--nav-action:last-child
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z' fill='%23BC9CFF'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: center
