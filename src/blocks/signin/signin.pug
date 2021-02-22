@@ -1,0 +1,14 @@
+mixin signin
+    .signin.modal-container
+        h1.signin__headline Войти
+        form(action="") 
+            .signin__user-login
+                .signin__user-input
+                    +text-field(type="email" placeholder="Email")
+                .signin__user-input
+                    +text-field(type="password" placeholder="Password")
+            .signin__btn
+                +btn-form('перейти к оплате')(type="submit")
+            .signin__account
+                span.signin__account Нет аккаунта на Toxin
+                +btn('создать')
