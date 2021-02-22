@@ -1,0 +1,9 @@
+mixin rich-checkbox-btns(list)
+    .rich-checkbox-btns
+        ul.rich-checkbox-btns__list
+            each item in list
+                li.rich-checkbox-btns__list-item
+                    span.rich-checkbox-btns__title
+                        +checkbox(item[0])
+                    span.rich-checkbox-btns__text
+                        |#{item[1]}
