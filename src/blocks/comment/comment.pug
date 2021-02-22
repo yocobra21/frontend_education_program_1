@@ -1,2 +1,11 @@
 mixin comment(text)
     .comment
+        .comment__avatar
+            img.comment__img(src="https://lh3.googleusercontent.com/ogw/ADGmqu-XeRiVWsN3ykT4pOFR6XtP3SlGmA4nu2-BRM1A=s83-c-mo", alt="")
+            .comment__user
+                span.comment__user-name Qwerty Qwerty
+                span.comment__time 5 дней назад
+        .comment__content
+            .comment__likebtn
+                +likebtn
+            .comment__text #{text}
