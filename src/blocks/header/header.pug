@@ -2,19 +2,20 @@ mixin header
     header.header
         .header__logo
             +logo
-        ul.header__list
-            li.header__list-item
-                a.header__list-link.header__list-link--active О нас 
-            li.header__list-item
-                a.header__list-link Услуги
-                    span.header__list-link-icon
-            li.header__list-item
-                a.header__list-link Вакансии
-            li.header__list-item
-                a.header__list-link Новости
-            li.header__list-item
-                a.header__list-link  Соглашения
-                    span.header__list-link-icon
+        nav.header-nav
+            ul.header__list
+                li.header__list-item
+                    a.header__list-link.header__list-link--active О нас 
+                li.header__list-item
+                    a.header__list-link Услуги
+                        span.header__list-link-icon
+                li.header__list-item
+                    a.header__list-link Вакансии
+                li.header__list-item
+                    a.header__list-link Новости
+                li.header__list-item
+                    a.header__list-link  Соглашения
+                        span.header__list-link-icon
         .header__btns
             .header__btn
                 +btn('войти')
