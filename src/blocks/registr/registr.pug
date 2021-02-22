@@ -1,0 +1,29 @@
+mixin registr
+    .registr
+        h1.registr__headline Регистрация аккаунта
+        form(action="") 
+            .registr__user
+                .registr__user-input
+                    +text-field(type="text" placeholder="Имя")
+                .registr__user-input
+                    +text-field(type="text" placeholder="Фамилия")
+                .registr__user-radio
+                    +radiobtn('Мужчина')(checked)
+                .registr__user-radio
+                    +radiobtn('Женщина')
+            .registr__user-date
+                h3.registr__user-headline Дата Рождения
+                +date-field
+            .registr__user-login
+                h3.registr__user-headline данные для входа в сервис
+                .registr__user-input
+                    +text-field(type="email" placeholder="Email")
+                .registr__user-input
+                    +text-field(type="password" placeholder="Password")
+            .registr__user-special
+                +toggle('Получать спецпредложения')
+            .registr__pay
+                +btn-form('перейти к оплате')(type="submit")
+            .registr__account
+                span.registr__account Уже есть аккаунт на Toxin
+                +btn('войти')
