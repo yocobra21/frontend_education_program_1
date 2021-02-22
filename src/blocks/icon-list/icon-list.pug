@@ -1,0 +1,10 @@
+mixin icon-list(list)
+    .icon-list
+        ul.icon-list__list
+        each item in list
+            li.icon-list__list-item
+                .icon-list__list-item-content
+                    span.icon-list__icon
+                    .icon-list__list-item-desc
+                        span.icon-list__title #{item[0]}
+                        span.icon-list__text #{item[1]}
