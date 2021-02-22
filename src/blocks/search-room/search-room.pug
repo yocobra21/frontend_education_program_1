@@ -1,0 +1,11 @@
+mixin search-room
+    .search-room.modal-container
+        h1.search-room__headline Найдём номера под ваши пожелания
+        form(action="") 
+            .search-room__date
+                +date-dropdown
+            .search-room__guests
+                h3.search-room__guests-title гости
+                +dropdown
+            .search-room__btn
+                +btn-form('подобрать номер')

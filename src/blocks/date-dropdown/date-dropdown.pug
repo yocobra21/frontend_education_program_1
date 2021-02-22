@@ -1,11 +1,16 @@
 mixin date-dropdown()
     .date-dropdown
-        .date-dropdown__input
-            input.date-dropdown__item.date-dropdown__arrival(type="text" placeholder="ДД.ММ.ГГГГ")
-            span.date-dropdown__icon
-        .date-dropdown__input
-            input.date-dropdown__item.date-dropdown__departure(type="text" placeholder="ДД.ММ.ГГГГ")
-            span.date-dropdown__icon
+        .date-dropdown__inputs
+            .date-dropdown__date
+                h3.date-dropdown__headline Прибытие
+                .date-dropdown__input
+                    input.date-dropdown__item.date-dropdown__arrival(type="text" placeholder="ДД.ММ.ГГГГ")
+                    span.date-dropdown__icon
+            .date-dropdown__date
+                h3.date-dropdown__headline Выезд
+                .date-dropdown__input
+                    input.date-dropdown__item.date-dropdown__departure(type="text" placeholder="ДД.ММ.ГГГГ")
+                    span.date-dropdown__icon
         .date-dropdown__datepicker-container   
             .date-dropdown__datepicker
             .date-dropdown__btns
