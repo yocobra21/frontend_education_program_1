@@ -1,0 +1,35 @@
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: $white
+    border: 1px solid #000
+
+.header__logo
+    margin: 15px 0
+
+
+.header__list-item
+    display: inline-flex
+
+.header__list-link
+    font-size: 1.4rem
+    color: $darkshade50
+    padding: 0 10px
+    &--active
+        color: $darkshade75
+        font-weight: 700
+
+.header__list-link-icon
+    display: inline-block
+    width: 12px
+    height: 8px
+    margin-left: 5px
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z' fill='%231F2041' fill-opacity='0.5'/%3E%3C/svg%3E%0A")
+    cursor: pointer
+
+.header__btn
+    display: inline-block
+
+.header__btn:first-child
+    margin-right: 20px
