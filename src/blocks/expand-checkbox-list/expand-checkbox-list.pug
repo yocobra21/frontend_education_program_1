@@ -1,0 +1,8 @@
+mixin expand-checkbox-list(list)
+    .expand-checkbox-list
+        h3.expand-checkbox-list__title expand-checkbox-list
+            span.expand-checkbox-list__icon
+        ul.expand-checkbox-list__list
+            each item in list
+                li.expand-checkbox-list__list-item
+                    +checkbox(item)
