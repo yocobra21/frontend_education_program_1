@@ -1,0 +1,21 @@
+mixin room-preview(listImg)
+    .room-preview
+        .room-preview__slider
+            each img in listImg
+                .room-preview__slider-item
+                    img.room-preview__slider-item-img(src=img, alt="", srcset="")
+        .room-preview__desc
+            .room-preview__head
+                .room-preview__number
+                    span.room-preview__number-icon №
+                    span.room-preview__number-headline 888
+                    span.room-preview__number-type люкс
+                .room-preview__amount
+                    span.room-preview__amount-text 9 990₽ 
+                    |в сутки
+            .room-preview__rating
+                .room-preview__rating-item
+                    +ratebtn(5,5)
+                .room-preview__rating-review
+                    span.room-preview__rating-review-count 145 
+                    |отзывов
