@@ -1,6 +1,6 @@
-mixin expand-checkbox-list(list)
+mixin expand-checkbox-list(title, list)
     .expand-checkbox-list
-        h3.expand-checkbox-list__title expand-checkbox-list
+        h3.expand-checkbox-list__title #{title}
             span.expand-checkbox-list__icon
         ul.expand-checkbox-list__list
             each item in list
